@@ -1,15 +1,14 @@
-# CAPILLUS ACTIVE – статичен сайт
+# CAPILLUS ACTIVE – premium static site
 
-Този пакет е готов за качване в GitHub и deploy във Vercel.
+Тази версия е с по-premium, натурална и луксозна визия.
+Включва качената референтна продуктова снимка като hero изображение.
 
 ## Какво да направиш
-1. Разархивирай ZIP файла.
-2. Качи всички файлове в GitHub repository `capillus-active`.
-3. В `index.html` смени:
+1. Качи всички файлове в GitHub.
+2. В `index.html` смени:
    `CHANGE-THIS-TO-YOUR-EMAIL@example.com`
    с твоя реален имейл.
-4. Смени `product-placeholder.png` с твоята продуктова снимка.
-5. Импортирай репото във Vercel и натисни Deploy.
+3. Deploy във Vercel.
 
 ## Файлове
 - index.html
@@ -17,7 +16,7 @@
 - terms.html
 - delivery.html
 - thank-you.html
-- product-placeholder.png
+- product-premium.jpg
 
-## Забележка
-Това е стартов продаващ лендинг. Текстовете за политика, общи условия и доставка са примерни и е добре да се адаптират към реалната ти фирма и търговски условия.
+## Бележка
+Текстовете за политика, общи условия и доставка са примерни.
