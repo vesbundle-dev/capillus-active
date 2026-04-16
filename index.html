@@ -336,59 +336,6 @@
 
     ul.clean li{margin:8px 0}
 
-    .ingredients-grid{
-      display:grid;
-      grid-template-columns:1.05fr .95fr;
-      gap:22px;
-      align-items:start;
-    }
-
-    .list-grid{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:14px;
-      margin-top:20px;
-    }
-
-    .list-item{
-      background:rgba(255,253,249,.92);
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:14px 16px;
-      font-family:Arial,Helvetica,sans-serif;
-      color:#413a33;
-    }
-
-    .steps{display:grid;gap:14px}
-
-    .step{
-      display:flex;
-      gap:14px;
-      background:rgba(255,253,249,.92);
-      border:1px solid var(--line);
-      border-radius:22px;
-      padding:16px 18px;
-    }
-
-    .num{
-      width:36px;
-      height:36px;
-      border-radius:999px;
-      background:linear-gradient(135deg,var(--gold),#d1b488);
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex:0 0 auto;
-      font-family:Arial,Helvetica,sans-serif;
-      font-weight:800;
-    }
-
-    .step div:last-child{
-      font-family:Arial,Helvetica,sans-serif;
-      color:var(--muted);
-    }
-
     .faq{
       display:grid;
       grid-template-columns:repeat(2,1fr);
@@ -475,17 +422,6 @@
       border:1px solid rgba(255,255,255,.12);
     }
 
-    .disclaimer{
-      margin-top:18px;
-      padding:15px 16px;
-      border-radius:18px;
-      background:#f8efe3;
-      border:1px solid #e8d5bb;
-      color:#8a6231;
-      font-family:Arial,Helvetica,sans-serif;
-      font-size:14px;
-    }
-
     footer{
       padding:28px 0 50px;
       border-top:1px solid var(--line);
@@ -512,7 +448,6 @@
     @media (max-width: 980px){
       .hero-grid,
       .offers,
-      .ingredients-grid,
       .faq,
       .order-wrap,
       .benefits{
@@ -520,7 +455,6 @@
       }
 
       .field-row,
-      .list-grid,
       .points{
         grid-template-columns:1fr;
       }
@@ -548,7 +482,6 @@
       <nav class="navlinks">
         <a href="#benefits">Ползи</a>
         <a href="#offers">Оферти</a>
-        <a href="#ingredients">Състав</a>
         <a href="#order" class="btn btn-gold" style="padding:10px 16px">Поръчай</a>
       </nav>
     </div>
@@ -699,44 +632,6 @@
               <li>Най-добрата стойност за цената</li>
             </ul>
             <a href="#order" class="btn btn-gold">Вземи 2 + 1</a>
-          </div>
-        </div>
-
-        <div class="disclaimer">
-          Офертите и цените могат да бъдат редактирани според търговската стратегия, наличностите и финалното позициониране на продукта.
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ingredients">
-      <div class="wrap ingredients-grid">
-        <div>
-          <h2>Активни съставки</h2>
-          <p class="lead">
-            Формулата на CAPILLUS ACTIVE включва внимателно подбрани съставки, насочени към поддържане
-            на здравия вид, силата и доброто състояние на косата.
-          </p>
-
-          <div class="list-grid">
-            <div class="list-item">Екстракт от просо – 100 mg</div>
-            <div class="list-item">Медицинска мая – 60 mg</div>
-            <div class="list-item">Витамин B1 – 60 mg</div>
-            <div class="list-item">Витамин B5 – 60 mg</div>
-            <div class="list-item">Холин битартрат – 60 mg</div>
-            <div class="list-item">PABA – 20 mg</div>
-            <div class="list-item">L-цистин – 20 mg</div>
-            <div class="list-item">L-метионин – 20 mg</div>
-            <div class="list-item">Биотин – 100 μg</div>
-          </div>
-        </div>
-
-        <div>
-          <h2>Как CAPILLUS ACTIVE подпомага твоята коса</h2>
-          <div class="steps">
-            <div class="step"><div class="num">1</div><div>Видимо по-плътна и жизнена коса при редовен прием.</div></div>
-            <div class="step"><div class="num">2</div><div>Подхранва косъма от корена с важни витамини и аминокиселини.</div></div>
-            <div class="step"><div class="num">3</div><div>Подходящ при косопад, изтощена и изтъняваща коса.</div></div>
-            <div class="step"><div class="num">4</div><div>Лесен прием и удобен за ежедневна употреба.</div></div>
           </div>
         </div>
       </div>
