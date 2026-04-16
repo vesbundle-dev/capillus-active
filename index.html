@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAPILLUS ACTIVE</title>
-
-  <!-- Meta Pixel -->
+  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -19,78 +15,741 @@
     fbq('init', '1033865821170996');
     fbq('track', 'PageView');
   </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1033865821170996&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPILLUS ACTIVE – Подхранване и растеж на косата | Премиум формула</title>
+  <meta name="description" content="CAPILLUS ACTIVE е хранителна добавка за подхранване, укрепване и поддържане на здравия вид на косата. Подходящ за мъже и жени." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f6f1ea;
-      margin: 0;
-      padding: 20px;
+    :root{
+      --bg:#f6f1ea;
+      --bg-soft:#fbf8f4;
+      --card:#fffdf9;
+      --line:#e6ddd2;
+      --text:#2a2622;
+      --muted:#6b6259;
+      --gold:#b08a57;
+      --gold-dark:#8f6b3c;
+      --accent:#3d473a;
+      --accent-soft:#6d7a67;
+      --shadow:0 18px 50px rgba(82,63,39,.10);
+      --radius:28px;
     }
 
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      font-family:Georgia, "Times New Roman", serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(176,138,87,.10), transparent 28%),
+        linear-gradient(180deg,#fbf8f4 0%, #f6f1ea 45%, #f3ede4 100%);
+      line-height:1.6;
     }
 
-    h1 {
-      text-align: center;
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+
+    .wrap{
+      max-width:1200px;
+      margin:0 auto;
+      padding:0 22px;
     }
 
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:40;
+      backdrop-filter:blur(10px);
+      background:rgba(251,248,244,.82);
+      border-bottom:1px solid rgba(230,221,210,.9);
     }
 
-    button {
-      margin-top: 20px;
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 12px;
-      background: #c9a96e;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+      padding:16px 0;
+    }
+
+    .brand{
+      font-size:26px;
+      font-weight:700;
+      letter-spacing:.08em;
+      color:var(--accent);
+      text-transform:uppercase;
+    }
+
+    .brand span{color:var(--gold-dark)}
+
+    .navlinks{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .navlinks a{
+      font-size:14px;
+      color:var(--muted);
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:18px;
+      padding:14px 22px;
+      border:none;
+      cursor:pointer;
+      transition:.2s transform,.2s box-shadow,.2s background;
+      font-family:Arial,Helvetica,sans-serif;
+      font-weight:700;
+    }
+
+    .btn:hover{transform:translateY(-1px)}
+
+    .btn-gold{
+      background:linear-gradient(135deg,var(--gold),#d1b488);
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+
+    .btn-dark{
+      background:#2d312c;
+      color:#fff;
+    }
+
+    .btn-light{
+      background:rgba(255,255,255,.7);
+      border:1px solid var(--line);
+      color:var(--text);
+    }
+
+    .hero{padding:58px 0 34px}
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:34px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      background:rgba(176,138,87,.10);
+      border:1px solid rgba(176,138,87,.25);
+      color:var(--gold-dark);
+      font-size:12px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    h1{
+      font-size:62px;
+      line-height:.98;
+      margin:18px 0 14px;
+      letter-spacing:-.04em;
+      font-weight:700;
+      color:#2b2621;
+    }
+
+    .subhero{
+      font-size:22px;
+      color:var(--muted);
+      max-width:640px;
+    }
+
+    .hero-cta{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin:28px 0;
+    }
+
+    .points{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:20px;
+    }
+
+    .point{
+      background:rgba(255,253,249,.76);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:16px;
+      box-shadow:0 10px 28px rgba(82,63,39,.05);
+    }
+
+    .point strong{
+      display:block;
+      font-size:15px;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .point span{
+      color:var(--muted);
+      font-size:14px;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .premium-card{
+      background:linear-gradient(180deg,rgba(255,253,249,.95) 0%, rgba(246,241,234,.95) 100%);
+      border:1px solid var(--line);
+      border-radius:38px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    .premium-frame{
+      border-radius:32px;
+      overflow:hidden;
+      background:#eee5d9;
+      border:1px solid rgba(176,138,87,.18);
+    }
+
+    .premium-image{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    .section{padding:44px 0}
+
+    h2{
+      font-size:42px;
+      line-height:1.05;
+      margin:0 0 12px;
+      letter-spacing:-.03em;
+      font-weight:700;
+    }
+
+    .lead{
+      max-width:760px;
+      color:var(--muted);
+      font-size:18px;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .benefits{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:24px;
+    }
+
+    .card{
+      background:rgba(255,253,249,.92);
+      border:1px solid var(--line);
+      border-radius:26px;
+      padding:22px;
+      box-shadow:0 10px 28px rgba(82,63,39,.06);
+    }
+
+    .card .nr{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      background:rgba(176,138,87,.12);
+      color:var(--gold-dark);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-family:Arial,Helvetica,sans-serif;
+      margin-bottom:14px;
+    }
+
+    .card h3{
+      margin:0 0 8px;
+      font-size:23px;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .offers{
+      display:grid;
+      grid-template-columns:1fr 1.08fr;
+      gap:22px;
+      margin-top:24px;
+    }
+
+    .offer{
+      background:rgba(255,253,249,.94);
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:28px;
+      box-shadow:0 12px 34px rgba(82,63,39,.06);
+      position:relative;
+    }
+
+    .offer.featured{
+      border:1px solid rgba(176,138,87,.45);
+      box-shadow:0 24px 64px rgba(176,138,87,.18);
+      background:linear-gradient(180deg,#fffdf9 0%, #f7f0e5 100%);
+    }
+
+    .tag{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(61,71,58,.08);
+      color:var(--accent);
+      font-size:12px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .featured .tag{
+      background:rgba(176,138,87,.14);
+      color:var(--gold-dark);
+    }
+
+    .price{
+      font-size:50px;
+      font-weight:700;
+      margin:10px 0 4px;
+      line-height:1.15;
+    }
+
+    .price small{
+      display:block;
+      font-size:18px;
+      color:var(--muted);
+      font-family:Arial,Helvetica,sans-serif;
+      font-weight:600;
+      margin-top:6px;
+    }
+
+    .strike{
+      font-family:Arial,Helvetica,sans-serif;
+      color:#9b907f;
+      text-decoration:line-through;
+      margin-bottom:6px;
+    }
+
+    ul.clean{
+      padding-left:20px;
+      color:var(--muted);
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    ul.clean li{margin:8px 0}
+
+    .faq{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .order-wrap{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    form{
+      background:rgba(255,253,249,.96);
+      border:1px solid var(--line);
+      border-radius:32px;
+      padding:24px;
+      box-shadow:0 12px 34px rgba(82,63,39,.06);
+    }
+
+    .field-row{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+    }
+
+    input,select,textarea{
+      width:100%;
+      padding:15px 16px;
+      border:1px solid #d8ccbe;
+      border-radius:16px;
+      font:inherit;
+      font-family:Arial,Helvetica,sans-serif;
+      color:#2a2622;
+      background:#fffdfa;
+    }
+
+    textarea{
+      min-height:110px;
+      resize:vertical;
+    }
+
+    .mt{margin-top:14px}
+
+    .check{
+      display:flex;
+      gap:10px;
+      font-size:13px;
+      color:var(--muted);
+      margin-top:14px;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .check input{
+      width:auto;
+      margin-top:3px;
+    }
+
+    .sidebox{
+      background:linear-gradient(180deg,#3b4338 0%, #252924 100%);
+      color:#f8f3ec;
+      border-radius:32px;
+      padding:26px;
+      box-shadow:0 18px 50px rgba(37,41,36,.20);
+    }
+
+    .sidebox h3{
+      margin:0 0 12px;
+      font-size:34px;
+      line-height:1.04;
+    }
+
+    .sidebox p,.sidebox li{
+      font-family:Arial,Helvetica,sans-serif;
+      color:#e9dfd2;
+    }
+
+    .softbox{
+      margin-top:18px;
+      padding:16px;
+      border-radius:20px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+    }
+
+    footer{
+      padding:28px 0 50px;
+      border-top:1px solid var(--line);
+      margin-top:18px;
+    }
+
+    .foot{
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:14px;
+    }
+
+    .foot-links{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    @media (max-width: 980px){
+      .hero-grid,
+      .offers,
+      .faq,
+      .order-wrap,
+      .benefits{
+        grid-template-columns:1fr;
+      }
+
+      .field-row,
+      .points{
+        grid-template-columns:1fr;
+      }
+
+      h1{font-size:46px}
+      h2{font-size:34px}
+    }
+
+    @media (max-width: 640px){
+      .navlinks{display:none}
+      .hero{padding-top:30px}
+      h1{font-size:38px}
+      .subhero{font-size:18px}
+      .hero-cta{flex-direction:column}
+      .btn{width:100%}
+      .price{font-size:42px}
+      .price small{font-size:16px}
     }
   </style>
 </head>
-
 <body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <div class="brand">Capillus <span>Active</span></div>
+      <nav class="navlinks">
+        <a href="#benefits">Ползи</a>
+        <a href="#offers">Оферти</a>
+        <a href="#order" class="btn btn-gold" style="padding:10px 16px">Поръчай</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <h1>Поръчай CAPILLUS ACTIVE</h1>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Премиум формула за ежедневна грижа</div>
+          <h1>По-гъста, по-здрава и жизнена коса – всеки ден</h1>
+          <p class="subhero">
+            Хранителна добавка с внимателно подбрани съставки, създадена да подпомогне подхранването, силата и добрия вид на косата отвътре.
+          </p>
 
-  <form action="https://formsubmit.co/capillusactive@gmail.com" method="POST">
+          <div class="hero-cta">
+            <a href="#offers" class="btn btn-gold">Виж офертите</a>
+            <a href="#order" class="btn btn-light">Поръчай сега</a>
+          </div>
 
-    <input type="hidden" name="_subject" value="Нова поръчка от CAPILLUS ACTIVE">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://capillus-active.vercel.app/thank-you.html">
+          <div class="points">
+            <div class="point"><strong>Подкрепа отвътре</strong><span>формула за поддържане на косата и скалпа</span></div>
+            <div class="point"><strong>Премиум визия</strong><span>доверие, стил и усещане за висок клас продукт</span></div>
+            <div class="point"><strong>Изгодна оферта</strong><span>2 + 1 безплатно за по-дълъг прием</span></div>
+            <div class="point"><strong>Лесна поръчка</strong><span>заявка директно от телефон или компютър</span></div>
+          </div>
+        </div>
 
-    <input type="text" name="Име" placeholder="Име и фамилия" required>
-    <input type="tel" name="Телефон" placeholder="Телефон" required>
-    <input type="text" name="Адрес" placeholder="Офис на Спиди/Еконт" required>
+        <div class="premium-card">
+          <div class="premium-frame">
+            <img src="newPIC.png" alt="CAPILLUS ACTIVE" class="premium-image">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <select name="Оферта" required>
-      <option value="">Избери оферта</option>
-      <option>1 опаковка – 15,19 €</option>
-      <option>2 + 1 безплатно – 30,38 €</option>
-    </select>
+    <section class="section" id="benefits">
+      <div class="wrap">
+        <h2>Забелязваш ли промяна в косата си?</h2>
+        <p class="lead">
+          Косата може да изглежда по-изтощена, по-безжизнена или да губи плътност при натоварено ежедневие,
+          стрес и недостиг на важни хранителни вещества. CAPILLUS ACTIVE е създаден да подпомогне организма отвътре
+          и да даде на косата подкрепата, от която има нужда.
+        </p>
 
-    <textarea name="Бележка" placeholder="Бележка (по желание)"></textarea>
+        <div class="benefits">
+          <div class="card">
+            <div class="nr">01</div>
+            <h3>Подхранва косата отвътре</h3>
+            <p>Формула с внимателно подбрани съставки, насочени към поддържане на добрия вид и състояние на косата.</p>
+          </div>
+          <div class="card">
+            <div class="nr">02</div>
+            <h3>Подпомага здравия вид</h3>
+            <p>Подходящ избор за хора, които искат косата им да изглежда по-силна, жизнена и добре поддържана.</p>
+          </div>
+          <div class="card">
+            <div class="nr">03</div>
+            <h3>Подходящ за ежедневен прием</h3>
+            <p>Практично решение за мъже и жени, които искат постоянна грижа и удобен режим на прием.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <button type="submit">Поръчай</button>
+    <section class="section">
+      <div class="wrap">
+        <h2>Какво харесват клиентите в CAPILLUS ACTIVE</h2>
+        <p class="lead">
+          Хората избират продукта най-често заради удобството, ясния състав и възможността за по-дълъг прием на добра цена.
+        </p>
 
-  </form>
-</div>
+        <div class="benefits">
+          <div class="card">
+            <div class="nr">01</div>
+            <h3>Удобен ежедневен прием</h3>
+            <p>Лесно се вписва в ежедневието без сложни режими или процедури.</p>
+          </div>
+          <div class="card">
+            <div class="nr">02</div>
+            <h3>Изгодна оферта 2 + 1</h3>
+            <p>Позволява по-дълъг период на прием на по-добра цена.</p>
+          </div>
+          <div class="card">
+            <div class="nr">03</div>
+            <h3>Ясно описан състав</h3>
+            <p>Съдържа подбрани съставки, познати със своята роля за косата и организма.</p>
+          </div>
+          <div class="card">
+            <div class="nr">04</div>
+            <h3>Лесна поръчка</h3>
+            <p>Без регистрация – само с няколко клика от телефон или компютър.</p>
+          </div>
+          <div class="card">
+            <div class="nr">05</div>
+            <h3>Плащане при доставка</h3>
+            <p>Плащаш при получаване – без риск и с пълна сигурност.</p>
+          </div>
+          <div class="card">
+            <div class="nr">06</div>
+            <h3>Подходящ за мъже и жени</h3>
+            <p>Универсален продукт за всеки, който иска да се грижи за косата си.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="offers">
+      <div class="wrap">
+        <h2>Избери своята оферта</h2>
+        <p class="lead">
+          CAPILLUS ACTIVE се предлага в удобни варианти според твоите нужди. Можеш да започнеш с 1 опаковка
+          или да избереш най-изгодния пакет 2 + 1 безплатно.
+        </p>
+
+        <div class="offers">
+          <div class="offer">
+            <div class="tag">Стартов избор</div>
+            <h3>1 опаковка</h3>
+            <div class="price">
+              15,19 €
+              <small>29,71 лв.</small>
+            </div>
+            <ul class="clean">
+              <li>90 капсули</li>
+              <li>Подходящо за първи прием</li>
+              <li>Удобен вариант за запознаване с продукта</li>
+            </ul>
+            <a href="#order" class="btn btn-dark">Поръчай 1 брой</a>
+          </div>
+
+          <div class="offer featured">
+            <div class="tag">Най-изгодно</div>
+            <h3>Купуваш 2, получаваш 1 безплатно</h3>
+            <div class="strike">89,13 лв. / 45,57 € стандартна стойност</div>
+            <div class="price">
+              30,38 €
+              <small>59,42 лв.</small>
+            </div>
+            <ul class="clean">
+              <li>Общо 3 опаковки</li>
+              <li>Подходящо за по-дълъг прием</li>
+              <li>Най-добрата стойност за цената</li>
+            </ul>
+            <a href="#order" class="btn btn-gold">Вземи 2 + 1</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap faq">
+        <div class="card">
+          <h3>За кого е подходящ CAPILLUS ACTIVE?</h3>
+          <p>Подходящ е за мъже и жени, които искат да полагат ежедневна грижа за косата си и да подпомогнат нейния добър вид отвътре.</p>
+        </div>
+        <div class="card">
+          <h3>Как се приема продуктът?</h3>
+          <p>Следвай указанията върху етикета или препоръчителния прием, посочен от производителя.</p>
+        </div>
+        <div class="card">
+          <h3>Колко стига една опаковка?</h3>
+          <p>Една опаковка съдържа 90 капсули. Продължителността на приема зависи от препоръчителната схема на употреба.</p>
+        </div>
+        <div class="card">
+          <h3>Защо пакет 2 + 1?</h3>
+          <p>Тази оферта дава по-добра стойност за цената и е подходяща за хора, които искат по-дълъг период на прием.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="wrap order-wrap">
+        <div>
+          <h2>Поръчай CAPILLUS ACTIVE</h2>
+          <p class="lead">
+            Остави своите данни и ние ще се свържем с теб за потвърждение на поръчката.
+          </p>
+
+          <form action="https://formsubmit.co/capillusactive@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Нова поръчка от сайта CAPILLUS ACTIVE">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://capillus-active.vercel.app/thank-you.html">
+
+            <div class="field-row">
+              <input type="text" name="Име и фамилия" placeholder="Име и фамилия" required>
+              <input type="tel" name="Телефон" placeholder="Телефон" required>
+            </div>
+
+            <div class="mt">
+              <input type="email" name="Имейл" placeholder="Имейл (по желание)">
+            </div>
+
+            <div class="mt">
+              <input type="text" name="Адрес" placeholder="Адрес за доставка (офис на куриер или личен адрес)" required>
+            </div>
+
+            <div class="mt">
+              <select name="Оферта" required>
+                <option value="">Избери оферта</option>
+                <option>1 опаковка – 29,71 лв. / 15,19 €</option>
+                <option>2 + 1 безплатно – 59,42 лв. / 30,38 €</option>
+              </select>
+            </div>
+
+            <div class="mt">
+              <textarea name="Бележка" placeholder="Бележка към поръчката"></textarea>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" required>
+              <span>Съгласен/на съм с обработката на лични данни и условията за поръчка.</span>
+            </label>
+
+            <div class="mt">
+              <button class="btn btn-gold" type="submit">Поръчай сега</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="sidebox">
+          <h3>Защо клиентите харесват тази оферта</h3>
+          <ul>
+            <li>Видима грижа за косата още от първите седмици прием.</li>
+            <li>Подходящ при косопад и изтощена коса.</li>
+            <li>Поръчваш бързо и лесно – без регистрация.</li>
+            <li>Формула, създадена за поддържане на здрава и жизнена коса.</li>
+            <li>Плащаш при доставка – пълна сигурност.</li>
+          </ul>
+
+          <div class="softbox">
+            Хранителна добавка. Не е заместител на разнообразното хранене. Не превишавай препоръчителния дневен прием.
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© 2026 CAPILLUS ACTIVE. Всички права запазени.</div>
+      <div class="foot-links">
+        <a href="privacy.html">Политика за поверителност</a>
+        <a href="terms.html">Общи условия</a>
+        <a href="delivery.html">Доставка и плащане</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
