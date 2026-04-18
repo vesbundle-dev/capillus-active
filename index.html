@@ -25,6 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAPILLUS ACTIVE – Подхранване и растеж на косата | Премиум формула</title>
   <meta name="description" content="CAPILLUS ACTIVE е хранителна добавка за подхранване, укрепване и поддържане на здравия вид на косата. Подходящ за мъже и жени." />
+
   <style>
     :root{
       --bg:#f6f1ea;
@@ -114,6 +115,7 @@
       transition:.2s transform,.2s box-shadow,.2s background;
       font-family:Arial,Helvetica,sans-serif;
       font-weight:700;
+      text-align:center;
     }
 
     .btn:hover{transform:translateY(-1px)}
@@ -539,7 +541,7 @@
         <a href="#benefits">Ползи</a>
         <a href="#ingredients">Състав</a>
         <a href="#offers">Оферти</a>
-        <a href="#order" class="btn btn-gold" style="padding:10px 16px">Поръчай</a>
+        <a href="#order" class="btn btn-gold" style="padding:10px 16px">Остави телефон</a>
       </nav>
     </div>
   </header>
@@ -556,7 +558,7 @@
 
           <div class="hero-cta">
             <a href="#offers" class="btn btn-gold">Виж офертите</a>
-            <a href="#order" class="btn btn-light">Поръчай сега</a>
+            <a href="#order" class="btn btn-light">Остави телефон – ще ти се обадим</a>
           </div>
 
           <div class="points">
@@ -691,7 +693,7 @@
               <li>Подходящо за първи прием</li>
               <li>Удобен вариант за запознаване с продукта</li>
             </ul>
-            <a href="#order" class="btn btn-dark">Поръчай 1 брой</a>
+            <a href="#order" class="btn btn-dark">Остави телефон за 1 брой</a>
           </div>
 
           <div class="offer featured">
@@ -707,7 +709,7 @@
               <li>Подходящо за по-дълъг прием</li>
               <li>Най-добрата стойност за цената</li>
             </ul>
-            <a href="#order" class="btn btn-gold">Вземи 2 + 1</a>
+            <a href="#order" class="btn btn-gold">Остави телефон за 2 + 1</a>
           </div>
         </div>
       </div>
@@ -737,60 +739,44 @@
     <section class="section" id="order">
       <div class="wrap order-wrap">
         <div>
-          <h2>Поръчай CAPILLUS ACTIVE</h2>
+          <h2>Остави телефон и ще ти се обадим</h2>
           <p class="lead">
-            Остави своите данни и ние ще се свържем с теб за потвърждение на поръчката.
+            Попълни кратката форма и ще се свържем с теб за потвърждение на поръчката.
           </p>
 
-          <form action="https://formsubmit.co/capillusactive@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="Нова поръчка от сайта CAPILLUS ACTIVE">
+          <form action="https://formsubmit.co/capillusactive@gmail.com" method="POST" onsubmit="fbq('track','Lead');">
+            <input type="hidden" name="_subject" value="Нова заявка от сайта CAPILLUS ACTIVE">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://capillus-active.vercel.app/thank-you.html">
 
-            <div class="field-row">
-              <input type="text" name="Име и фамилия" placeholder="Име и фамилия" required>
-              <input type="tel" name="Телефон" placeholder="Телефон" required>
-            </div>
+            <input type="text" name="Име" placeholder="Вашето име" required>
 
             <div class="mt">
-              <input type="email" name="Имейл" placeholder="Имейл (по желание)">
-            </div>
-
-            <div class="mt">
-              <input type="text" name="Адрес" placeholder="Адрес за доставка (офис на куриер или личен адрес)" required>
+              <input type="tel" name="Телефон" placeholder="Телефон за връзка" required>
             </div>
 
             <div class="mt">
               <select name="Оферта" required>
                 <option value="">Избери оферта</option>
-                <option>1 опаковка – 29,71 лв. / 15,19 €</option>
-                <option>2 + 1 безплатно – 59,42 лв. / 30,38 €</option>
+                <option>1 опаковка – 15,19 €</option>
+                <option>2 + 1 безплатно – 30,38 €</option>
               </select>
             </div>
 
             <div class="mt">
-              <textarea name="Бележка" placeholder="Бележка към поръчката"></textarea>
-            </div>
-
-            <label class="check">
-              <input type="checkbox" required>
-              <span>Съгласен/на съм с обработката на лични данни и условията за поръчка.</span>
-            </label>
-
-            <div class="mt">
-              <button class="btn btn-gold" type="submit">Поръчай сега</button>
+              <button class="btn btn-gold" type="submit">Изпрати заявка</button>
             </div>
           </form>
         </div>
 
         <aside class="sidebox">
-          <h3>Защо клиентите харесват тази оферта</h3>
+          <h3>Защо този вариант е удобен</h3>
           <ul>
-            <li>Видима грижа за косата още от първите седмици прием.</li>
-            <li>Подходящ при косопад и изтощена коса.</li>
-            <li>Поръчваш бързо и лесно – без регистрация.</li>
-            <li>Формула, създадена за поддържане на здрава и жизнена коса.</li>
+            <li>Оставяш само име и телефон.</li>
+            <li>Ние ти се обаждаме за потвърждение.</li>
+            <li>Избираш офертата още от формата.</li>
+            <li>Подходящо за бърза заявка без излишно попълване.</li>
             <li>Плащаш при доставка – пълна сигурност.</li>
           </ul>
 
